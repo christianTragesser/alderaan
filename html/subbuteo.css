@@ -1,0 +1,14 @@
+body {background:#000000 ; color:#0000FF ; font-family:arial}
+h1 {color:#0000FF ; font-family:arial}
+h4 {color:#FFFFFF ; font-family:arial: ; text-decoration:underline ; font-weight:bold ; display:inline}
+p {color:#0000FF ; font-family:arial }
+p.list {color:#00FF00 ; font-family:sydnie ; text-decoration:underline ; font-weight:bold}
+p.item {color:#0000FF ; font-family:arial ; text-indent: 1cm}
+.date {display:inline}
+.linksR{display:inline}
+.linksL{display:inline}
+.headR{color:#00FF00 ; font-family:sydnie ; text-decoration:underline ; font-weight:bold ; text-align:right ; display:inline}
+.headL{color:#00FF00 ; font-family:sydnie ; text-decoration:underline ; font-weight:bold ; display:inline}
+ul.none{list-style-type: none}
+td {color:#00FF00}
+

@@ -1,0 +1,26 @@
+variables:
+  IMAGE_NAME: alderaan
+  IMAGE_FILE_PATH: $CI_PROJECT_DIR
+
+include:
+  - project: christiantragesser/gitlab-ci-templates
+    ref: master
+    file:
+      - kaniko.yml
+
+stages:
+  - publish
+
+publish:container:
+  stage: publish
+  extends:
+    - .kaniko
+  variables:
+    DOCKER_BUILD_STAGE: publish
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+      changes:
+        - go.*
+        - main.go
+        - html/*
+        - Dockerfile
